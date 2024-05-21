@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Triangle Calculator RevoU</title>
+    <!-- <link rel="icon" type="image/png" href="/assets/triangle.png" /> -->
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <div>
+        <h1 class="judul">TRIANGLE CALCULATOR</h1>
+        <p class="intro">
+          Welcome to our Triangle Calculator! With this handy tool, you can
+          quickly calculate various properties of a triangle, such as its area
+          and perimeter. Whether you're a student studying geometry or just need
+          to solve a triangle-related problem, our calculator is here to help.
+          Simply input the necessary measurements, and let us do the math for
+          you. Let's start exploring triangles together!
+        </p>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Button -->
+    <section>
+      <div class="container">
+        <a class="button-stg" href="#luas-segitiga">Area of Triangle</a>
+        <a class="button-stg" href="#keliling-segitiga"
+          >Perimeter of Triangle</a
+        >
+        <!-- <button class="button-stg" href="#luas-segitiga">Luas Segitiga</button> -->
+        <!-- <button class="button-stg" href="#keliling-segitiga">Keliling Segitiga</button> -->
+      </div>
+    </section>
+    <!-- End Button -->
+
+    <!-- Start Triangle Fact Slider -->
+    <section>
+      <strong class="info"> - TRIANGLE FACT - </strong>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <strong>Sum of Angles is Always 180 Degrees</strong>
+            <p class="text-slider">
+              No matter the shape or size of a triangle, the sum of its internal
+              angles will always equal 180 degrees. This property is fundamental
+              in Euclidean geometry. It applies to all types of triangles:
+              equilateral, isosceles, and scalene.
+            </p>
+          </div>
+          <div class="slide">
+            <strong>Triangles are the Strongest Shape</strong>
+            <p class="text-slider">
+              Triangles are incredibly strong and stable shapes because any
+              added force is evenly distributed across all three sides. This
+              property is why they are often used in construction and
+              engineering, such as in bridges and roof trusses.
+            </p>
+          </div>
+          <div class="slide">
+            <strong>Triangles in Art and Architecture</strong>
+            <p class="text-slider">
+              Triangles are commonly used in art and architecture due to their
+              aesthetic appeal and structural stability. For example, the
+              Pyramids of Egypt are based on triangular shapes, which provide a
+              stable structure that has lasted for thousands of years.
+            </p>
+          </div>
+          <div class="slide">
+            <strong>Triangles in Nature</strong>
+            <p class="text-slider">
+              Triangles can also be found in nature. For example, the triangular
+              shape of certain leaves and the way honeycombs are constructed
+              (hexagons can be divided into triangles) utilize the strength and
+              efficiency of this shape.
+            </p>
+          </div>
+          <div class="slide">
+            <strong>Triangles in Mathematics and Physics</strong>
+            <p class="text-slider">
+              Triangles play a crucial role in trigonometry, a branch of
+              mathematics that studies relationships involving lengths and
+              angles of triangles. They are also essential in physics,
+              especially in understanding vectors and forces.
+            </p>
+          </div>
+          <div class="slide">
+            <strong>Triangle Inequality Theorem</strong>
+            <p class="text-slider">
+              This theorem states that the sum of the lengths of any two sides
+              of a triangle must be greater than the length of the remaining
+              side. This property helps determine whether a set of three lines
+              can form a triangle.
+            </p>
+          </div>
+          <div class="slide">
+            <strong>Triangles in Technology</strong>
+            <p class="text-slider">
+              Triangles are used in computer graphics to create 3D models. The
+              surfaces of these models are often divided into many small
+              triangles because they are easier to work with computationally.
+            </p>
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+    <!-- End Triangle Fact Slider -->
+
+    <!-- Start Application of Triangle -->
+    <section>
+      <strong class="info"> - APPLICATION OF TRIANGLE - </strong>
+      <div class="container">
+        <div class="row">
+          <div class="card">
+            <div class="card-header">
+              <img
+                class="image-app"
+                src="./assets/architect.webp"
+                alt="Architectural Structures"
+              />
+            </div>
+            <div class="card-body">
+              <strong>Architectural Structures</strong>
+              <p>
+                Triangles are widely used in architectural structures due to
+                their stability and strength. From the triangular trusses in
+                roof designs to the triangular supports in bridges, the
+                geometric properties of triangles allow engineers and architects
+                to create durable and efficient structures that can withstand
+                various loads and forces.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="card-header">
+              <img
+                class="image-app"
+                src="./assets/navigation.jpg"
+                alt="Architectural Structures"
+              />
+            </div>
+            <div class="card-body">
+              <strong>Navigation and Mapping</strong>
+              <p>
+                Triangles play a crucial role in navigation and mapping,
+                especially in determining distances, angles, and positions.
+                Technologies like triangulation, which involves measuring the
+                angles of a triangle formed by three known points, are utilized
+                in GPS systems, cartography, and surveying to accurately map out
+                locations and navigate through landscapes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="card-header">
+              <img
+                class="image-app"
+                src="./assets/art.webp"
+                alt="Architectural Structures"
+              />
+            </div>
+            <div class="card-body">
+              <strong>Art and Design</strong>
+              <p>
+                Triangles are widely used in art and design for their aesthetic
+                appeal and versatility. They can be found in paintings,
+                sculptures, graphic design, and logo creation, adding visual
+                interest and dynamism. In interior design, triangles create
+                focal points, patterns, and visual illusions, enhancing the
+                overall aesthetic of spaces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Application of Triangle -->
+
+    <!-- Start Area of Triangle -->
+    <section id="luas-segitiga">
+      <div>
+        <h2 class="judul">Area of Triangle</h2>
+        <div class="container">
+          <img class="image" src="./assets/luas.gif" alt="area-triangle" />
+        </div>
+      </div>
+      <div class="container">
+        <p>Area of Triangle Formula :</p>
+        <p class="rumus">0.5 x base x height</p>
+      </div>
+      <div class="container">
+        <p>Calculate The Area of Triangle</p>
+      </div>
+      <div class="form-container">
+        <form name="formLuas" action="/js/script.js" method="post"></form>
+          <div class="input-form">
+            <input id="base" name="base" type="number" placeholder="Enter The Base of Triangle" />
+          </div>
+          <div class="input-form">
+            <input id="height" name="height" type="number" placeholder="Enter The Height of Triangle" />
+          </div>
+          <div>
+            <button type="submit" class="button-htg">GO!</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Area of Triangle -->
+
+    <!-- Start Perimeter of Triangle -->
+    <section id="keliling-segitiga">
+      <div>
+        <h2 class="judul">Perimeter of Triangle</h2>
+        <div class="container">
+          <img
+            class="image"
+            src="./assets/keliling.png"
+            alt="perimeter-triangle"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <p>Perimeter of Triangle Formula :</p>
+        <p class="rumus">a + b + c</p>
+      </div>
+      <div class="container">
+        <p>Calculate The Perimeter of Triangle</p>
+      </div>
+      <div class="form-container">
+        <form name="formKeliling" action="/js/script.js" method="post"></form>
+          <div class="input-form">
+            <input id="side-a" type="number" placeholder="Enter The a Value of Triangle" />
+          </div>
+          <div class="input-form">
+            <input id="side-b" type="number" placeholder="Enter The b Value of Triangle" />
+          </div>
+          <div class="input-form">
+            <input id="side-c" type="number" placeholder="Enter The c Value of Triangle" />
+          </div>
+          <div>
+            <button class="button-htg">GO!</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End Perimeter of Triangle -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
