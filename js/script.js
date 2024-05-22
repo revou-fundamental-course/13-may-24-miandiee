@@ -35,7 +35,7 @@ function validationArea() {
      document.getElementById("displayArea").textContent = `Area of Triangle: ${area}`;
    } else {
      console.log("Validation Failed");
-     alert("Input must be filled out with valid numbers");
+     alert("Input Must be Filled Out");
    }
  }
 
@@ -57,7 +57,7 @@ function validationPerimeter() {
      document.getElementById("displayPerimeter").textContent = `Perimeter of Triangle: ${perimeter}`;
    } else {
      console.log("Validation Failed");
-     alert("Input must be filled out with valid numbers");
+     alert("Input Must be Filled Out");
    }
  }
  
