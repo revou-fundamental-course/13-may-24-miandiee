@@ -83,9 +83,11 @@ h1 {
   display: block;
   border: 2px solid coral;
   padding: 10px;
-  width: 80%;
-  max-width: 400px;
+  width: 130%;
+  max-width: none;
   box-sizing: border-box;
+  position: relative;
+  left: -15%;
 }
 
 .input-form input {
@@ -104,7 +106,6 @@ h1 {
 .button-htg {
   margin: 0 5px;
   padding: 10px 20px;
-  float: right;
   font-size: 18px;
   font-family: inherit;
   font-weight: bold;
@@ -210,8 +211,8 @@ h1 {
 }
 
 .card-header {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -227,4 +228,69 @@ h1 {
   margin: 10px auto;
   padding-left: 12px;
   padding-right: 15px;
+}
+
+.element-container {
+  margin: 2px auto;
+  padding: 2px auto;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container-card {
+    flex-direction: column;
+  }
+  
+  .judul {
+    letter-spacing: 3px;
+  }
+
+  .intro {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .button-stg {
+    padding: 5px 5px;
+  }
+
+  .info {
+    letter-spacing: 3px;
+  }
+
+  .slider {
+    max-width: 350px;
+  }
+
+  .text-slider {
+    max-width: 270px;
+    font-size: 16px;
+  }
+
+  .slide {
+    font-size: 18px;
+  }
+
+  .prev {
+    left: 5px;
+  }
+  
+  .next {
+    right: 5px;
+  }
+  
+  .card {
+    margin: 10px auto;
+    width: 330px;
+    height: 520px;
+  }
+  
+  .image-app {
+    width: 330px;
+    height: 230px;
+  }
 }

@@ -114,7 +114,7 @@
     <!-- Start Application of Triangle -->
     <section>
       <strong class="info"> - APPLICATION OF TRIANGLE - </strong>
-      <div class="container">
+      <div class="container container-card">
         <div class="row">
           <div class="card">
             <div class="card-header">
@@ -201,18 +201,23 @@
         <p>Calculate The Area of Triangle</p>
       </div>
       <div class="form-container">
-        <form name="formLuas" action="/js/script.js" method="post"></form>
+        <form name="formLuas" action="/js/script.js" method="post">
           <div class="input-form">
             <input id="base" name="base" type="number" placeholder="Enter The Base of Triangle" />
           </div>
           <div class="input-form">
             <input id="height" name="height" type="number" placeholder="Enter The Height of Triangle" />
           </div>
-          <div>
-            <button type="submit" class="button-htg">GO!</button>
+          <div class="element-container">
+            <button type="button" class="button-htg" onclick="validationArea()">GO!</button>
           </div>
         </form>
       </div>
+      <div class="element-container">
+        <p id="displayFormulaArea"></p>
+        <p id="displayValueArea"></p>
+        <p id="displayArea"></p>
+      </div>  
     </section>
     <!-- End Area of Triangle -->
 
@@ -236,7 +241,7 @@
         <p>Calculate The Perimeter of Triangle</p>
       </div>
       <div class="form-container">
-        <form name="formKeliling" action="/js/script.js" method="post"></form>
+        <form name="formKeliling" action="/js/script.js" method="post">
           <div class="input-form">
             <input id="side-a" type="number" placeholder="Enter The a Value of Triangle" />
           </div>
@@ -246,11 +251,16 @@
           <div class="input-form">
             <input id="side-c" type="number" placeholder="Enter The c Value of Triangle" />
           </div>
-          <div>
-            <button class="button-htg">GO!</button>
+          <div class="element-container">
+            <button type="button" class="button-htg" onclick="validationPerimeter()">GO!</button>
           </div>
         </form>
       </div>
+      <div class="element-container">
+        <p id="displayFormulaPerimeter"></p>
+        <p id="displayValuePerimeter"></p>
+        <p id="displayPerimeter"></p>
+      </div>  
     </section>
     <!-- End Perimeter of Triangle -->
 
