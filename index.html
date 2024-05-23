@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Triangle Calculator RevoU</title>
-    <!-- <link rel="icon" type="image/png" href="/assets/triangle.png" /> -->
   </head>
   <body>
     <!-- Start Header -->
@@ -31,8 +30,6 @@
         <a class="button-stg" href="#keliling-segitiga"
           >Perimeter of Triangle</a
         >
-        <!-- <button class="button-stg" href="#luas-segitiga">Luas Segitiga</button> -->
-        <!-- <button class="button-stg" href="#keliling-segitiga">Keliling Segitiga</button> -->
       </div>
     </section>
     <!-- End Button -->
@@ -120,7 +117,7 @@
             <div class="card-header">
               <img
                 class="image-app"
-                src="./assets/architect.webp"
+                src="assets/architect.webp"
                 alt="Architectural Structures"
               />
             </div>
@@ -142,7 +139,7 @@
             <div class="card-header">
               <img
                 class="image-app"
-                src="./assets/navigation.jpg"
+                src="assets/navigation.jpg"
                 alt="Architectural Structures"
               />
             </div>
@@ -164,7 +161,7 @@
             <div class="card-header">
               <img
                 class="image-app"
-                src="./assets/art.webp"
+                src="assets/art.webp"
                 alt="Architectural Structures"
               />
             </div>
@@ -190,7 +187,7 @@
       <div>
         <h2 class="judul">Area of Triangle</h2>
         <div class="container">
-          <img class="image" src="./assets/luas.gif" alt="area-triangle" />
+          <img class="image" src="assets/luas.gif" alt="area-triangle" />
         </div>
       </div>
       <div class="container">
@@ -201,7 +198,7 @@
         <p>Calculate The Area of Triangle</p>
       </div>
       <div class="form-container">
-        <form name="formLuas" action="/js/script.js" method="post">
+        <form name="form-luas" action="/js/script.js" method="post">
           <div class="input-form">
             <input id="base" name="base" type="number" placeholder="Enter The Base of Triangle" />
           </div>
@@ -210,13 +207,14 @@
           </div>
           <div class="element-container">
             <button type="button" class="button-htg" onclick="validationArea()">GO!</button>
+            <button type="reset" class="button-reset" onclick="resetArea()">Reset</button>
           </div>
         </form>
       </div>
       <div class="element-container">
-        <p id="displayFormulaArea"></p>
-        <p id="displayValueArea"></p>
-        <p id="displayArea"></p>
+        <p id="display-formula-area"></p>
+        <p id="display-value-area"></p>
+        <p id="display-area"></p>
       </div>  
     </section>
     <!-- End Area of Triangle -->
@@ -228,7 +226,7 @@
         <div class="container">
           <img
             class="image"
-            src="./assets/keliling.png"
+            src="assets/keliling.png"
             alt="perimeter-triangle"
           />
         </div>
@@ -241,7 +239,7 @@
         <p>Calculate The Perimeter of Triangle</p>
       </div>
       <div class="form-container">
-        <form name="formKeliling" action="/js/script.js" method="post">
+        <form name="form-keliling" action="/js/script.js" method="post">
           <div class="input-form">
             <input id="side-a" type="number" placeholder="Enter The a Value of Triangle" />
           </div>
@@ -253,17 +251,18 @@
           </div>
           <div class="element-container">
             <button type="button" class="button-htg" onclick="validationPerimeter()">GO!</button>
+            <button type="reset" class="button-reset" onclick="resetPerimeter()">Reset</button>
           </div>
         </form>
       </div>
       <div class="element-container">
-        <p id="displayFormulaPerimeter"></p>
-        <p id="displayValuePerimeter"></p>
-        <p id="displayPerimeter"></p>
+        <p id="display-formula-perimeter"></p>
+        <p id="display-value-perimeter"></p>
+        <p id="display-perimeter"></p>
       </div>  
     </section>
     <!-- End Perimeter of Triangle -->
 
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

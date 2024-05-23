@@ -1,3 +1,4 @@
+/* body */
 body {
   background-color: beige;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -6,11 +7,16 @@ body {
   margin-left: 0%;
   margin-right: 0%;
 }
+/* end */
 
+/* elemen */
 h1 {
   font-size: 50px;
 }
+/* end */
 
+
+/* judul dan ucapan selamat datang */
 .judul {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 10px;
@@ -29,12 +35,16 @@ h1 {
   text-align: center;
   text-decoration: none;
 }
+/* end */
 
+/* container main */
 .container {
   display: flex;
   justify-content: center;
 }
+/* end */
 
+/* button redirect */
 .button-stg {
   margin: 0 5px;
   padding: 10px 20px;
@@ -56,7 +66,9 @@ h1 {
   background-color: coral;
   border-color: coral;
 }
+/* end */
 
+/* elemen luas dan keliling segitiga */
 .image {
   height: 250px;
   width: 300px;
@@ -70,7 +82,9 @@ h1 {
   padding-left: 3px;
   padding-right: 3px;
 }
+/* end */
 
+/* form luas dan keliling segitiga */
 .form-container {
   display: flex;
   flex-direction: column;
@@ -102,7 +116,9 @@ h1 {
 .input-form input:focus {
   border: 2px solid darkseagreen;
 }
+/* end */
 
+/* button hitung */
 .button-htg {
   margin: 0 5px;
   padding: 10px 20px;
@@ -123,7 +139,32 @@ h1 {
   background-color: burlywood;
   border-color: burlywood;
 }
+/* end */
 
+/* button reset */
+.button-reset {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: burlywood;
+  border: 2px solid burlywood;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+}
+
+.button-reset:hover {
+  background-color: coral;
+  border-color: coral;
+}
+/* end */
+
+/* slider triangle fact */
 .slider {
   position: relative;
   width: 100%;
@@ -193,7 +234,9 @@ h1 {
   text-align: center;
   color: coral;
 }
+/* end */
 
+/* card application of triangle */
 .row {
   display: flex;
   margin: 5px auto;
@@ -229,22 +272,24 @@ h1 {
   padding-left: 12px;
   padding-right: 15px;
 }
+/* end */
 
+/* hasil perhitungan */
 .element-container {
   margin: 2px auto;
   padding: 2px auto;
   text-align: center;
 }
+/* end */
 
+/* media query for smartphone */
 @media (max-width: 1000px) {
+  /* body */
   body {
     font-size: 18px;
   }
-
-  .container-card {
-    flex-direction: column;
-  }
   
+  /* judul dan ucapan selamat datang */
   .judul {
     letter-spacing: 3px;
   }
@@ -253,15 +298,15 @@ h1 {
     width: 80%;
     max-width: 600px;
   }
+  /* end */
 
+  /* button redirect */
   .button-stg {
     padding: 5px 5px;
   }
+  /* end */
 
-  .info {
-    letter-spacing: 3px;
-  }
-
+  /* slider triangle fact */
   .slider {
     max-width: 350px;
   }
@@ -282,7 +327,17 @@ h1 {
   .next {
     right: 5px;
   }
+
+  .info {
+    letter-spacing: 3px;
+  }
+  /* end */
   
+  /* card application of triangle */
+  .container-card {
+    flex-direction: column;
+  }
+
   .card {
     margin: 10px auto;
     width: 330px;
@@ -293,4 +348,5 @@ h1 {
     width: 330px;
     height: 230px;
   }
+  /* end */
 }
